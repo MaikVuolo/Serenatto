@@ -1,0 +1,81 @@
+body {
+  --bege: #E6E0D6;
+  --marrom-escuro: #816D4F;
+  --marrom-claro: #B29463;
+  font-family: Barlow;
+}
+
+input[type=checkbox] {
+  border: solid 2px var(--marrom-claro);
+}
+
+input[type=checkbox]:checked,
+input[type=checkbox]:focus {
+  background-color: var(--marrom-claro);
+  border: solid 2px var(--marrom-claro);
+  box-shadow: none;
+  outline: none;
+}
+
+input[type=checkbox]:not(:checked) {
+  background-color: white;
+}
+
+.banners-1 {
+  background-image: url("./assets/banner-1.png");
+}
+
+.banners-2 {
+  background-image: url("./assets/banner-2.png");
+}
+
+.banners-3 {
+  background-image: url("./assets/banner-3.png");
+}
+
+.banners {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banners-titulo {
+  --bs-bg-opacity: 0.2;
+}
+
+.botao-padrao {
+  background-color: var(--marrom-claro);
+  color: black;
+}
+
+.botao-padrao:hover{
+  background-color: var(--marrom-escuro);
+}
+
+.form-range::-webkit-slider-thumb {
+   -webkit-appearance: none; 
+   background: var(--marrom-claro);
+} 
+
+.bg-brown {
+  background-color: var(--marrom-claro);
+}
+
+.cor-preta {
+  color: black;
+}
+
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link,.card,.offcanvas {
+    --bs-nav-link-color: white;
+    --bs-body-color: white;
+    --bs-offcanvas-color: white;
+  }
+  .cor-preta{
+    color: white;
+  }
+}
